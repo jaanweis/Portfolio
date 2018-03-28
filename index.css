@@ -1,5 +1,4 @@
 .header{
     display: flex;
-    color: aqua;
-    background-color: burlywood;
+    border: black;
 }
