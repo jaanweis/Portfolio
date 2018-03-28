@@ -7,3 +7,9 @@
     display: flex;
     background-color: darkgray,
 }
+
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+} 
