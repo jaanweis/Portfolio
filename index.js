@@ -11,3 +11,12 @@ $(".navbar-btn-vote").on("click", function(){
 // $(function(){
 //   $('[data-toggle="tooltrip"]').tooltrip();
 // });
+
+$(function(){
+  $('.carousel').carousel({
+    interval: 3000,
+    pause: false,
+    wrap: true,
+    keyboard:true
+  });
+});

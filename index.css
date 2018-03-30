@@ -4,64 +4,36 @@ body{
 }
 
 .content-one{
-  padding-top: 80px;
+  padding-top: 150px;
 }
 
-#navbar {
-  display: flex;
-  justify-content: space-around;
+.content-two {
+  padding-top: 30px;
 }
 
 .navbar-btn-vote {
   margin: 10px;
 }
 
-.skills-pictures {
-  display: flex;
-  width: 100px;
-  height: 100px;
+.zoom {      
+  -webkit-transition: all 0.35s ease-in-out;    
+  -moz-transition: all 0.35s ease-in-out;    
+  transition: all 0.35s ease-in-out;     
+  cursor: -webkit-zoom-in;      
+  cursor: -moz-zoom-in;      
+  cursor: zoom-in;  
+}     
+
+.zoom:hover,  
+.zoom:active,   
+.zoom:focus {
+/**adjust scale to desired size, 
+add browser prefixes**/
+  -ms-transform: scale(2.5);    
+  -moz-transform: scale(2.5);  
+  -webkit-transform: scale(2.5);  
+  -o-transform: scale(2.5);  
+  transform: scale(2.5);    
+  position:relative;      
+  z-index:100;  
 }
-/* .navbar ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 30px;
-  border-radius: 20px;
-  padding: 0;
-  overflow: hidden;
-  background-color:rgb(165, 161, 161);
-  font-size: 25px;
-}
-
-.navbar li {
-  float: left;
-}
-
-.navbar li a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar li a:hover {
-  text-decoration: none;
-  color: black;
-} */
-
-
-/* .parent {
-  font-size: 30px;
-  height: 440px;
-  margin: 30px;
-  margin-top: 10px;
-  color: rgb(60, 34, 206);
-  padding: 10px;
-  border-radius: 20px;
-  background: url("bild.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}  */
