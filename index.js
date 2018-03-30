@@ -7,3 +7,7 @@ $(".navbar-btn-vote").on("click", function(){
   $(".navbar-btn-vote").addClass("disabled");
   $(this).addClass("btn-primary");
 });
+
+// $(function(){
+//   $('[data-toggle="tooltrip"]').tooltrip();
+// });

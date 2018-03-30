@@ -3,9 +3,8 @@ body{
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-
-#content {
-  padding-top: 60px;
+.content-one{
+  padding-top: 80px;
 }
 
 #navbar {
@@ -15,11 +14,6 @@ body{
 
 .navbar-btn-vote {
   margin: 10px;
-}
-
-#chelsea-logo {
-  width: 20px;
-  height: 20px;
 }
 
 .skills-pictures {
