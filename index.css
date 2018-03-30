@@ -1,17 +1,64 @@
 body{
-  background:  linear-gradient(-90deg, rgb(39, 90, 69), rgb(45, 169, 190));
+  background:  linear-gradient(-90deg, rgb(198, 211, 206), rgb(45, 169, 190));
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.header{
-  background-color: darkgray;
-  border-radius: 20px;
-  padding: 10px;
-  margin-top: 20px;
+
+#content {
+  padding-top: 60px;
+}
+
+#navbar {
+  display: flex;
   justify-content: space-around;
 }
 
-.parent {
+.navbar-btn-vote {
+  margin: 10px;
+}
+
+#chelsea-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.skills-pictures {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+/* .navbar ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 30px;
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(165, 161, 161);
+  font-size: 25px;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  text-decoration: none;
+  color: black;
+} */
+
+
+/* .parent {
   font-size: 30px;
   height: 440px;
   margin: 30px;
@@ -23,30 +70,4 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-} 
-
-ul {
-  float: left;  
-  list-style-type: none;;
-  margin: 30px;
-  border-radius: 20px;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: rgba(153, 206, 203, 0.514);
-}
+}  */

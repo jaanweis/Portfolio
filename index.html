@@ -3,30 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <title>Jan-Niklas Weis</title>
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-  <script src="index.js"></script>
-<body>
 
-  <header>
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" >
+      <div class="navbar-header navbar-left">
+        <a href="#chelsea" class="navbar-brand">
+            My Portfolio
+        </a>
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myndd">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myndd">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <button class="btn btn-default navbar-right active navbar-btn-vote">VOTE DOWN</button>
+        <button class="btn btn-default navbar-right active navbar-btn-vote">VOTE UP</button>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container-fluid" id="content">
     <div>
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+      <a href="" class="btn btn-default">Test</a>
+      <a href="" class="btn btn-warning">Warning</a>
+      <a href="" class="btn btn-success btn-lg active">Erfolgreich</a>
+      <a href="" class="btn btn-danger btn-lg disabled">Gefahr</a>
     </div>
-    <div class="header">
-      <h1>HERE is what you are waiting for</h1>
+    <div class="skills-pictures">
+      <img src="html-logo.png" class="img-responsive img-rounded">
+      <img src="css-logo.png" class="img-responsive img-rounded">
+      <img src="js-logo.png" class="img-responsive img-rounded">
     </div>
-  </header>
+  </div>
 
-  <section >
-    <div class="parent">
-      <span>Hello</span>
+  <div class="container-fluid">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li class="dropdown-header">Web-Programmierung</li>
+          <li><a href="">HTML</a></li>
+          <li><a href="">CSS</a></li>
+          <li><a href="">JavaScript</a></li>
+          <div class="dropdown-divider"></div>
+          <li class="dropdown-header">Programmierung</li>
+          <li><a href="">Visual Basic</a></li>
+          <li><a href="">Java</a></li>
+          <li class="disabled"><a href="">C#</a></li>
+      </div>
     </div>
-  </section>
+  </div>
+  <!-- bootstrap has a dependency on jquery -->
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
 </body>
 </html>
