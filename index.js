@@ -20,3 +20,9 @@ $(function(){
     keyboard:true
   });
 });
+
+$("#pop-up-close").on("click", function(){
+  $(".pop-up").removeClass("pop-up");
+  //$(".go-away").addClass("pop-up-away");
+  $(".go-away").remove();
+});

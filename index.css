@@ -1,6 +1,7 @@
 body{
   background:  linear-gradient(-90deg, rgb(198, 211, 206), rgb(45, 169, 190));
   font-family: 'PT Sans Narrow', sans-serif;
+  overflow-x:hidden;  
 }
 
 .content-one{
@@ -48,4 +49,67 @@ add browser prefixes**/
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+#dropdownMenuButton:hover {
+  color: blue;
+  /*erster Param ist der Zeitdauerwert, der zweite bestimmt wann es beginnt*/
+  transition: background 1s, transform 2s 1s;
+  transform: rotate(720deg);
+}
+
+.fahrender-tesla {
+  float: right;
+  animation: drive 3s cubic-bezier(1,.05,.34,.97) infinite;
+  /* shorthand ersetzt den ganzen kram
+  animation-name: drive;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1,.05,.34,.97); */
+}
+
+@keyframes drive{
+  from{ transform: translateX(500px)}
+  to{ transform: translateX(-1500px)}
+}
+
+@keyframes jump{
+  0%{ top: -40px}
+  50%{ top: -100px}
+  100%{ top: -40px}
+}
+
+/* POP-UP STYLING */
+.pop-up{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  color: rgb(48, 53, 53);
+  position: relative; 
+  top: -2800px;
+  width: 300px;
+  padding: 0;
+  animation: popup 5s ease-in forwards;
+}
+
+.pop-up-away {
+  opacity: 0;
+}
+
+.cross {
+  position: absolute;
+  top:10px;
+  left: 10px;
+  background: darkgrey;
+}
+
+.cross:hover {
+  background: rgb(133, 130, 130);
+}
+
+@keyframes popup {
+  0%{opacity: 0;}
+  70%{transform: translateY(900px)}
+  100%{transform: translateY(850px); opacity: 1;}
 }
