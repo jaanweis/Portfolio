@@ -3,14 +3,6 @@ $(".nav li").on("click", function(){
   $(this).addClass("active");
 });
 
-$(".navbar-btn-vote").on("click", function(){
-  $(".navbar-btn-vote").addClass("disabled");
-  $(this).addClass("btn-primary");
-});
-
-// $(function(){
-//   $('[data-toggle="tooltrip"]').tooltrip();
-// });
 
 $(function(){
   $('.carousel').carousel({
@@ -19,10 +11,4 @@ $(function(){
     wrap: true,
     keyboard:true
   });
-});
-
-$("#pop-up-close").on("click", function(){
-  $(".pop-up").removeClass("pop-up");
-  //$(".go-away").addClass("pop-up-away");
-  $(".go-away").remove();
 });
