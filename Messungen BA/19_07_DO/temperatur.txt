@@ -1,0 +1,5 @@
+10:09	Tisch = 25 Achse 1-3 = 25,9 Achse 4-5 = 25,5 Achse 6 = 25,4
+Lufttemp. 25,2 		1010,6 mbar 	45,6% rH
+
+14:33	Tisch = 26 Achse 1-3 = 26,9 Achse 4-5 = 27,1 Achse 6 = 26,9
+Lufttemp. 26,3 		1009,0 mbar 	41,0% rH

@@ -1,0 +1,9 @@
+	X	Y	Z	A	B	C							A1	A2	A3	A4	A5	A6
+p1 0.02 0.00 449.98 21.45 70.85 -160.14
+p4 0.1 -0.1 450.19 -110.67 70.42 34.36
+
+beim Life-Vergleich von berechneter Base und Soll-Base am Roboter (eingetragen) sieht man beim 
+wechseln zwischen den bases den unterschied in der Koordinate
+ABER bei aktiver falscher (=berechnet) Base sind die vom Robi in der Ist-Pos. angezeigten gleich denen des LT
+
+

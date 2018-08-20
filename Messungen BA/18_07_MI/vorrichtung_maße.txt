@@ -1,0 +1,3 @@
+höhe: 6,97mm
+dicke: 1,48mm
+breite: 15,22mm

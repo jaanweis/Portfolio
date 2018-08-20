@@ -1,0 +1,1169 @@
+<oiProjectData date="2018-07-15T18:51:21" idCount="173" name="geometrische_Tool_Bestimmung.xml" version="0.13.0">
+    <activeCoordinateSystem ref="6"/>
+    <activeStation ref="5"/>
+    <stations>
+        <station id="5" group="" name="STATION01" comment="" activeFeature="0" solved="0" activeStation="1">
+            <activeSensor name="LeicaLaserTracker" plugin="OiSigma3D"/>
+            <position ref="3"/>
+            <coordinateSystem ref="4"/>
+        </station>
+    </stations>
+    <coordinateSystems>
+        <coordinateSystem isBundleSystem="0" id="6" group="" name="PART" comment="" activeFeature="0" solved="0" activeSystem="1">
+            <coordinates y="0" z="0" x="0"/>
+            <xAxis j="0" i="0" k="0"/>
+            <yAxis j="0" i="0" k="0"/>
+            <zAxis j="0" i="0" k="0"/>
+            <transformationParameters>
+                <transformationParameter ref="27"/>
+                <transformationParameter ref="159"/>
+                <transformationParameter ref="163"/>
+            </transformationParameters>
+            <expansionOrigin y="0" z="0" x="0"/>
+            <bundleTemplate name="" levelStation="" maxIterations="">
+                <parameters/>
+                <plugin pluginName="" name=""/>
+            </bundleTemplate>
+        </coordinateSystem>
+        <coordinateSystem isBundleSystem="0" id="33" group="tcp_jan" name="tcp_jan-system" comment="" activeFeature="0" solved="0" activeSystem="0">
+            <coordinates y="-0.0002645379471790665" z="0.2453668707090415" x="0.09530639418182141"/>
+            <xAxis j="0" i="0" k="0"/>
+            <yAxis j="0" i="0" k="0"/>
+            <zAxis j="0" i="0" k="0"/>
+            <transformationParameters>
+                <transformationParameter ref="156"/>
+                <transformationParameter ref="159"/>
+                <transformationParameter ref="163"/>
+            </transformationParameters>
+            <expansionOrigin y="0" z="0" x="0"/>
+            <bundleTemplate name="" levelStation="" maxIterations="">
+                <parameters/>
+                <plugin pluginName="" name=""/>
+            </bundleTemplate>
+        </coordinateSystem>
+        <coordinateSystem isBundleSystem="0" id="4" group="" name="STATION01" comment="" activeFeature="0" solved="1" activeSystem="0">
+            <coordinates y="-1.66058624591975" z="-0.01292221393428467" x="-0.4263240772023206"/>
+            <xAxis j="0" i="0" k="0"/>
+            <yAxis j="0" i="0" k="0"/>
+            <zAxis j="0" i="0" k="0"/>
+            <transformationParameters>
+                <transformationParameter ref="27"/>
+                <transformationParameter ref="156"/>
+            </transformationParameters>
+            <observations>
+                <observation ref="42"/>
+                <observation ref="44"/>
+                <observation ref="46"/>
+                <observation ref="48"/>
+                <observation ref="50"/>
+                <observation ref="52"/>
+                <observation ref="55"/>
+                <observation ref="57"/>
+                <observation ref="59"/>
+                <observation ref="61"/>
+                <observation ref="63"/>
+                <observation ref="65"/>
+                <observation ref="67"/>
+                <observation ref="69"/>
+                <observation ref="71"/>
+                <observation ref="74"/>
+                <observation ref="76"/>
+                <observation ref="78"/>
+                <observation ref="80"/>
+                <observation ref="82"/>
+                <observation ref="84"/>
+                <observation ref="101"/>
+                <observation ref="103"/>
+                <observation ref="105"/>
+                <observation ref="107"/>
+                <observation ref="109"/>
+                <observation ref="111"/>
+                <observation ref="113"/>
+                <observation ref="115"/>
+                <observation ref="117"/>
+                <observation ref="119"/>
+                <observation ref="121"/>
+                <observation ref="123"/>
+                <observation ref="125"/>
+                <observation ref="127"/>
+                <observation ref="133"/>
+                <observation ref="137"/>
+                <observation ref="141"/>
+                <observation ref="143"/>
+                <observation ref="145"/>
+                <observation ref="147"/>
+                <observation ref="149"/>
+            </observations>
+            <expansionOrigin y="0" z="0" x="0"/>
+            <bundleTemplate name="" levelStation="" maxIterations="">
+                <parameters/>
+                <plugin pluginName="" name=""/>
+            </bundleTemplate>
+        </coordinateSystem>
+    </coordinateSystems>
+    <transformationParameters>
+        <transformationParameter rx="-2.938827334243877" mz="1" id="27" group="All Groups" ty="-1.66058624591975" datumtrafo="1" tz="-0.01292221393428467" use="1" name="LT-tcp0" comment="" rz="-3.098939305191123" mx="1" activeFeature="0" solved="1" tx="-0.4263240772023206" my="1" ry="0.06370005654707642">
+            <functions>
+                <function name="OriginVectorVector" type="de.openIndy.plugin.function.systemTransformation.v170" plugin="OiSigma3D" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="9" isUsed="1" type="0" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="11" isUsed="1" type="9" index="1">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="13" isUsed="1" type="9" index="2">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters>
+                        <parameter name="actual temperature" value="20"/>
+                        <parameter name="reference temperature" value="20"/>
+                    </doubleParameters>
+                    <stringParameters>
+                        <parameter name="material" value="reinforced concrete"/>
+                        <parameter name="primary axis" value="Z"/>
+                        <parameter name="secondary axis" value="Y"/>
+                    </stringParameters>
+                </function>
+            </functions>
+            <previouslyNeeded>
+                <feature ref="9"/>
+                <feature ref="11"/>
+                <feature ref="13"/>
+            </previouslyNeeded>
+            <from ref="4"/>
+            <to ref="6"/>
+        </transformationParameter>
+        <transformationParameter rx="-2.939357317839962" mz="1" id="156" group="All Groups" ty="-1.661387298770173" datumtrafo="1" tz="-0.2568646143786451" use="1" name="LT-tcp_jan" comment="" rz="-3.100716309354583" mx="1" activeFeature="0" solved="1" tx="-0.5189340875800534" my="1" ry="0.06488842290569187">
+            <functions>
+                <function name="OriginVectorVector" type="de.openIndy.plugin.function.systemTransformation.v170" plugin="OiSigma3D" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="15" isUsed="1" type="10" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="17" isUsed="1" type="9" index="1">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="25" isUsed="1" type="9" index="2">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters>
+                        <parameter name="actual temperature" value="20"/>
+                        <parameter name="reference temperature" value="20"/>
+                    </doubleParameters>
+                    <stringParameters>
+                        <parameter name="material" value="reinforced concrete"/>
+                        <parameter name="primary axis" value="Z"/>
+                        <parameter name="secondary axis" value="X"/>
+                    </stringParameters>
+                </function>
+            </functions>
+            <previouslyNeeded>
+                <feature ref="15"/>
+                <feature ref="17"/>
+                <feature ref="25"/>
+            </previouslyNeeded>
+            <from ref="4"/>
+            <to ref="33"/>
+        </transformationParameter>
+        <transformationParameter rx="0" mz="1" id="159" group="All Groups" ty="0" datumtrafo="0" tz="0" use="0" name="trafo" comment="" rz="0" mx="1" activeFeature="0" solved="0" tx="0" my="1" ry="0">
+            <functions>
+                <function name="OriginVectorVector" type="de.openIndy.plugin.function.systemTransformation.v170" plugin="OiSigma3D" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="9" isUsed="1" type="0" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="11" isUsed="1" type="9" index="1">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="13" isUsed="1" type="9" index="2">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters>
+                        <parameter name="actual temperature" value="20"/>
+                        <parameter name="reference temperature" value="20"/>
+                    </doubleParameters>
+                    <stringParameters>
+                        <parameter name="material" value="reinforced concrete"/>
+                        <parameter name="primary axis" value="Z"/>
+                        <parameter name="secondary axis" value="Y"/>
+                    </stringParameters>
+                </function>
+            </functions>
+            <previouslyNeeded>
+                <feature ref="15"/>
+                <feature ref="17"/>
+                <feature ref="25"/>
+                <feature ref="23"/>
+                <feature ref="9"/>
+                <feature ref="11"/>
+                <feature ref="13"/>
+            </previouslyNeeded>
+            <from ref="33"/>
+            <to ref="6"/>
+        </transformationParameter>
+        <transformationParameter rx="0" mz="1" id="163" group="All Groups" ty="0" datumtrafo="0" tz="0" use="1" name="test" comment="" rz="0" mx="1" activeFeature="0" solved="0" tx="0" my="1" ry="0">
+            <functions>
+                <function name="OriginVectorVector" type="de.openIndy.plugin.function.systemTransformation.v170" plugin="OiSigma3D" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="15" isUsed="1" type="10" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="17" isUsed="1" type="9" index="1">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="25" isUsed="1" type="9" index="2">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters>
+                        <parameter name="actual temperature" value="20"/>
+                        <parameter name="reference temperature" value="20"/>
+                    </doubleParameters>
+                    <stringParameters>
+                        <parameter name="material" value="reinforced concrete"/>
+                        <parameter name="primary axis" value="Z"/>
+                        <parameter name="secondary axis" value="X"/>
+                    </stringParameters>
+                </function>
+            </functions>
+            <previouslyNeeded>
+                <feature ref="15"/>
+                <feature ref="17"/>
+                <feature ref="25"/>
+            </previouslyNeeded>
+            <from ref="6"/>
+            <to ref="33"/>
+        </transformationParameter>
+    </transformationParameters>
+    <geometries>
+        <geometry id="9" group="tcp0" name="flansch" comment="" nominal="0" activeFeature="1" common="0" type="circle" solved="1">
+            <functions>
+                <function name="BestFitCircleInPlane" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="71" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="74" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="76" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="78" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="80" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="82" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="84" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+                <function name="Register" type="de.openIndy.plugin.function.objectTransformation.v170" plugin="OpenIndy Default Plugin" executionIndex="1">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="40" isUsed="1" type="9" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <usedFor>
+                <feature ref="27"/>
+                <feature ref="159"/>
+            </usedFor>
+            <previouslyNeeded>
+                <feature ref="40"/>
+            </previouslyNeeded>
+            <coordinates y="1.43582248954971e-016" z="1.058140662764384e-015" x="-7.216449660063518e-016"/>
+            <spatialDirection j="-0.001416575274244069" i="0.9999067775291372" k="-0.01358048474057454"/>
+            <radius value="0.08658296544286426"/>
+            <standardDeviation value="2.079691218045453e-005"/>
+            <observations>
+                <observation ref="71"/>
+                <observation ref="74"/>
+                <observation ref="76"/>
+                <observation ref="78"/>
+                <observation ref="80"/>
+                <observation ref="82"/>
+                <observation ref="84"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="11" group="tcp0" name="aluplatte_unten" comment="" nominal="0" activeFeature="0" common="0" type="plane" solved="1">
+            <functions>
+                <function name="BestFitPlane" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="63" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="65" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="67" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="69" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <usedFor>
+                <feature ref="27"/>
+                <feature ref="159"/>
+            </usedFor>
+            <coordinates y="-0.002737263832639392" z="0.139064970838422" x="0.01165986133799567"/>
+            <spatialDirection j="-5.360567090363645e-016" i="-1.678331748387817e-015" k="1"/>
+            <standardDeviation value="6.208832183599821e-006"/>
+            <observations>
+                <observation ref="63"/>
+                <observation ref="65"/>
+                <observation ref="67"/>
+                <observation ref="69"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="13" group="tcp0" name="aluplatte_seitlich" comment="" nominal="0" activeFeature="0" common="0" type="plane" solved="1">
+            <functions>
+                <function name="BestFitPlane" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="55" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="57" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="59" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="61" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <usedFor>
+                <feature ref="27"/>
+                <feature ref="159"/>
+            </usedFor>
+            <coordinates y="-0.09410766829057476" z="-0.0003991935556117709" x="0.008878613032401381"/>
+            <spatialDirection j="0.9999999856498747" i="-1.426935369552344e-015" k="-0.000169411482388686"/>
+            <standardDeviation value="1.561777964507831e-005"/>
+            <observations>
+                <observation ref="55"/>
+                <observation ref="57"/>
+                <observation ref="59"/>
+                <observation ref="61"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="15" group="tcp_jan" name="ursprung" comment="" nominal="0" activeFeature="0" common="0" type="point" solved="1">
+            <functions>
+                <function name="BestFitPoint" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="137" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+                <function name="Register" type="de.openIndy.plugin.function.objectTransformation.v170" plugin="OpenIndy Default Plugin" executionIndex="1">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="17" isUsed="1" type="9" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <usedFor>
+                <feature ref="156"/>
+                <feature ref="159"/>
+                <feature ref="163"/>
+            </usedFor>
+            <previouslyNeeded>
+                <feature ref="17"/>
+            </previouslyNeeded>
+            <coordinates y="-0.0002645379471793033" z="0.2453668707090407" x="0.09530639418182162"/>
+            <standardDeviation value="-1.#IND"/>
+            <observations>
+                <observation ref="137"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="17" group="tcp_jan" name="ebene_ursprung" comment="" nominal="0" activeFeature="0" common="0" type="plane" solved="1">
+            <functions>
+                <function name="BestFitPlane" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="141" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="143" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="145" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="147" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="149" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <usedFor>
+                <feature ref="156"/>
+                <feature ref="159"/>
+                <feature ref="163"/>
+                <feature ref="15"/>
+            </usedFor>
+            <coordinates y="-0.003044753882950025" z="0.2453701468276712" x="0.09911205840504817"/>
+            <spatialDirection j="-0.0004777143938992203" i="-0.001209845314666022" k="0.9999991540312784"/>
+            <standardDeviation value="3.117443769953957e-006"/>
+            <observations>
+                <observation ref="141"/>
+                <observation ref="143"/>
+                <observation ref="145"/>
+                <observation ref="147"/>
+                <observation ref="149"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="19" group="tcp_jan" name="kreis_ursprung" comment="" nominal="0" activeFeature="0" common="0" type="circle" solved="1">
+            <functions>
+                <function name="BestFitCircleInPlane" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="101" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="103" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="105" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="107" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="109" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <coordinates y="-0.0003321271521285561" z="0.2003233054671669" x="0.09533312250901324"/>
+            <spatialDirection j="-0.04319375261907334" i="-0.001002391658407686" k="-0.9990662114923342"/>
+            <radius value="0.06899689139320665"/>
+            <standardDeviation value="1.898866741193309e-005"/>
+            <observations>
+                <observation ref="101"/>
+                <observation ref="103"/>
+                <observation ref="105"/>
+                <observation ref="107"/>
+                <observation ref="109"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="21" group="tcp_jan" name="ebene_offset" comment="" nominal="0" activeFeature="0" common="0" type="plane" solved="1">
+            <functions>
+                <function name="BestFitPlane" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="111" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="113" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="115" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="117" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <coordinates y="-0.0005218748856604116" z="0.2470561073631448" x="0.09473530255845231"/>
+            <spatialDirection j="0.001725700743451964" i="0.0003937098306039528" k="0.9999984334735297"/>
+            <standardDeviation value="1.588090793967843e-005"/>
+            <observations>
+                <observation ref="111"/>
+                <observation ref="113"/>
+                <observation ref="115"/>
+                <observation ref="117"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="23" group="tcp_jan" name="ebene_spindel_seitlich" comment="" nominal="0" activeFeature="0" common="0" type="plane" solved="1">
+            <functions>
+                <function name="BestFitPlane" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="119" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="121" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="123" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="125" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="127" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <usedFor>
+                <feature ref="159"/>
+            </usedFor>
+            <coordinates y="-0.09147012064343074" z="0.03573565116998474" x="0.0961300663917274"/>
+            <spatialDirection j="0.9999984817414711" i="0.001736550937316139" k="-0.0001445876718810444"/>
+            <standardDeviation value="5.781848421810162e-005"/>
+            <observations>
+                <observation ref="119"/>
+                <observation ref="121"/>
+                <observation ref="123"/>
+                <observation ref="125"/>
+                <observation ref="127"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="25" group="tcp_jan" name="ebene_spindel_hinten" comment="" nominal="0" activeFeature="0" common="0" type="plane" solved="1">
+            <functions>
+                <function name="BestFitPlane" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="133" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="42" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="44" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="46" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="48" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="50" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="52" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <usedFor>
+                <feature ref="156"/>
+                <feature ref="159"/>
+                <feature ref="163"/>
+            </usedFor>
+            <coordinates y="-0.01620665620893491" z="0.03410734981452659" x="-0.01912769378536037"/>
+            <spatialDirection j="-0.001811455935467134" i="0.9999973157207257" k="0.001444707145760501"/>
+            <standardDeviation value="1.89404451648582e-005"/>
+            <observations>
+                <observation ref="133"/>
+                <observation ref="42"/>
+                <observation ref="44"/>
+                <observation ref="46"/>
+                <observation ref="48"/>
+                <observation ref="50"/>
+                <observation ref="52"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="40" group="tcp0" name="aluplatte_hinten" comment="" nominal="0" activeFeature="0" common="0" type="plane" solved="1">
+            <functions>
+                <function name="BestFitPlane" type="de.openIndy.plugin.function.fitFunction.v170" plugin="OpenIndy Default Plugin" executionIndex="0">
+                    <inputElements>
+                        <element shouldBeUsed="1" ref="42" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="44" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="46" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="48" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="50" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                        <element shouldBeUsed="1" ref="52" isUsed="1" type="25" index="0">
+                            <ignoredDestinationParams/>
+                        </element>
+                    </inputElements>
+                    <integerParameters/>
+                    <doubleParameters/>
+                    <stringParameters/>
+                </function>
+                <function name="Shift" type="de.openIndy.plugin.function.objectTransformation.v170" plugin="OpenIndy Default Plugin" executionIndex="1">
+                    <inputElements/>
+                    <integerParameters/>
+                    <doubleParameters>
+                        <parameter name="offset [mm]" value="19.05"/>
+                    </doubleParameters>
+                    <stringParameters/>
+                </function>
+            </functions>
+            <usedFor>
+                <feature ref="9"/>
+            </usedFor>
+            <coordinates y="-0.009052643520020456" z="0.02253246483376024" x="-4.957449618506193e-005"/>
+            <spatialDirection j="-0.001849721593196725" i="0.9999972278568914" k="0.001456986122222107"/>
+            <standardDeviation value="2.079532661910844e-005"/>
+            <observations>
+                <observation ref="42"/>
+                <observation ref="44"/>
+                <observation ref="46"/>
+                <observation ref="48"/>
+                <observation ref="50"/>
+                <observation ref="52"/>
+            </observations>
+            <nominalGeometries/>
+            <measurementConfig name="FastPoint"/>
+        </geometry>
+        <geometry id="3" group="" name="" comment="" nominal="0" activeFeature="0" common="0" type="point" solved="1">
+            <coordinates y="-1.66058624591975" z="-0.01292221393428467" x="-0.4263240772023206"/>
+            <standardDeviation value="0"/>
+            <nominalGeometries/>
+            <measurementConfig name=""/>
+        </geometry>
+    </geometries>
+    <observations>
+        <observation isValid="1" isSolved="1" id="42" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.06396285562226289" z="0.1056313253386008" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.01931903294511922" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="43" time="2018-07-06T17:16:23" type="polar">
+                <measurements>
+                    <measurement value="1.773443270444913" type="azimuth" sigma="0"/>
+                    <measurement value="1.456908677272183" type="zenith" sigma="0"/>
+                    <measurement value="1.651942583194094" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="40"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="44" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.06297489701038583" z="0.06032290938599965" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.01927142077056826" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="45" time="2018-07-06T17:16:35" type="polar">
+                <measurements>
+                    <measurement value="1.776177980659004" type="azimuth" sigma="0"/>
+                    <measurement value="1.429613048264272" type="zenith" sigma="0"/>
+                    <measurement value="1.650278381171597" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="40"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="46" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.01126345953184349" z="0.09778971289206054" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.01915326064759038" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="47" time="2018-07-06T17:16:57" type="polar">
+                <measurements>
+                    <measurement value="1.763522422829608" type="azimuth" sigma="0"/>
+                    <measurement value="1.448281584519536" type="zenith" sigma="0"/>
+                    <measurement value="1.724275686256124" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="40"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="48" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.06129847945026601" z="0.1055331218633951" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.01909564780185469" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="49" time="2018-07-06T17:17:20" type="polar">
+                <measurements>
+                    <measurement value="1.756598507483116" type="azimuth" sigma="0"/>
+                    <measurement value="1.450195708287605" type="zenith" sigma="0"/>
+                    <measurement value="1.77334533234604" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="40"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="50" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.02099999243299289" z="-0.1313720282028109" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.01887946035640403" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="51" time="2018-07-06T17:17:41" type="polar">
+                <measurements>
+                    <measurement value="1.782317403138515" type="azimuth" sigma="0"/>
+                    <measurement value="1.315223910564097" type="zenith" sigma="0"/>
+                    <measurement value="1.693601061915026" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="40"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="52" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.02127136814151176" z="-0.1028767857884538" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.01887830759961651" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="53" time="2018-07-06T17:17:58" type="polar">
+                <measurements>
+                    <measurement value="1.774351565076384" type="azimuth" sigma="0"/>
+                    <measurement value="1.332577223777344" type="zenith" sigma="0"/>
+                    <measurement value="1.732844169029762" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="40"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="55" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.09409470174074719" z="0.1000848005307611" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.005590238220132993" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="56" time="2018-07-06T17:18:24" type="polar">
+                <measurements>
+                    <measurement value="1.793102760015961" type="azimuth" sigma="0"/>
+                    <measurement value="1.456560434965442" type="zenith" sigma="0"/>
+                    <measurement value="1.628869644621529" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="13"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="57" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.09410191895558895" z="0.04014470003502565" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.015241178679537" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="58" time="2018-07-06T17:18:33" type="polar">
+                <measurements>
+                    <measurement value="1.802822611065567" type="azimuth" sigma="0"/>
+                    <measurement value="1.420547943245428" type="zenith" sigma="0"/>
+                    <measurement value="1.628394644791181" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="13"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="59" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.09409999401606894" z="-0.0312647126348965" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.007425741696515997" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="60" time="2018-07-06T17:18:42" type="polar">
+                <measurements>
+                    <measurement value="1.802971734270265" type="azimuth" sigma="0"/>
+                    <measurement value="1.376426349392287" type="zenith" sigma="0"/>
+                    <measurement value="1.625532075985152" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="13"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="61" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.09413405844989398" z="-0.1105615621533373" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.007257293533419529" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="62" time="2018-07-06T17:18:51" type="polar">
+                <measurements>
+                    <measurement value="1.808303536182063" type="azimuth" sigma="0"/>
+                    <measurement value="1.327988602249099" type="zenith" sigma="0"/>
+                    <measurement value="1.628280904205052" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="13"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="63" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.05704635185424389" z="0.1390686090540849" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.009387929443034238" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="64" time="2018-07-06T17:19:23" type="polar">
+                <measurements>
+                    <measurement value="1.787067304373717" type="azimuth" sigma="0"/>
+                    <measurement value="1.477824120472153" type="zenith" sigma="0"/>
+                    <measurement value="1.668618097368963" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="11"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="65" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.03303144900209132" z="0.1390606628190246" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.01509749162851226" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="66" time="2018-07-06T17:19:30" type="polar">
+                <measurements>
+                    <measurement value="1.786744392578021" type="azimuth" sigma="0"/>
+                    <measurement value="1.476450500803834" type="zenith" sigma="0"/>
+                    <measurement value="1.69318823915859" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="11"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="67" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.02884245635965055" z="0.1390634988597974" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.004583624544264198" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="68" time="2018-07-06T17:19:39" type="polar">
+                <measurements>
+                    <measurement value="1.772012499943204" type="azimuth" sigma="0"/>
+                    <measurement value="1.471966463980634" type="zenith" sigma="0"/>
+                    <measurement value="1.750128693668985" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="11"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="69" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.0502862891661271" z="0.1390671126207813" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.01757039973617197" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="70" time="2018-07-06T17:19:47" type="polar">
+                <measurements>
+                    <measurement value="1.776238214001773" type="azimuth" sigma="0"/>
+                    <measurement value="1.471223940355128" type="zenith" sigma="0"/>
+                    <measurement value="1.774042810462683" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="11"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="71" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.004599413561852783" z="0.0864122832708196" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.02876622862151129" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="72" time="2018-07-06T17:20:11" type="polar">
+                <measurements>
+                    <measurement value="1.75962296383176" type="azimuth" sigma="0"/>
+                    <measurement value="1.441563414096162" type="zenith" sigma="0"/>
+                    <measurement value="1.714865261717775" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="9"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="74" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.05971367981956677" z="0.06260272004597781" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.02678754436069025" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="75" time="2018-07-06T17:20:25" type="polar">
+                <measurements>
+                    <measurement value="1.771118355390052" type="azimuth" sigma="0"/>
+                    <measurement value="1.430445092080273" type="zenith" sigma="0"/>
+                    <measurement value="1.651704098687177" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="9"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="76" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.08395520465164919" z="0.02090546439367057" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.03095881737677941" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="77" time="2018-07-06T17:20:35" type="polar">
+                <measurements>
+                    <measurement value="1.774839143647913" type="azimuth" sigma="0"/>
+                    <measurement value="1.405759204694581" type="zenith" sigma="0"/>
+                    <measurement value="1.62579932365225" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="9"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="78" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.08254557535375251" z="-0.02598543940341092" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.02921992866216644" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="79" time="2018-07-06T17:20:45" type="polar">
+                <measurements>
+                    <measurement value="1.778704823275889" type="azimuth" sigma="0"/>
+                    <measurement value="1.377163250363078" type="zenith" sigma="0"/>
+                    <measurement value="1.627290604227727" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="9"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="80" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.05468010030852777" z="-0.06711249849452455" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.02974233335711546" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="81" time="2018-07-06T17:20:57" type="polar">
+                <measurements>
+                    <measurement value="1.776834326515169" type="azimuth" sigma="0"/>
+                    <measurement value="1.352117898021746" type="zenith" sigma="0"/>
+                    <measurement value="1.655037224658079" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="9"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="82" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.006415446921520296" z="-0.08638854882720404" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.03164916488479813" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="83" time="2018-07-06T17:21:22" type="polar">
+                <measurements>
+                    <measurement value="1.769887225118646" type="azimuth" sigma="0"/>
+                    <measurement value="1.340937057886201" type="zenith" sigma="0"/>
+                    <measurement value="1.702188773618803" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="9"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="84" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.02750893861527182" z="-0.0821472562587014" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.02958129962980921" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="85" time="2018-07-06T17:21:34" type="polar">
+                <measurements>
+                    <measurement value="1.766095314770191" type="azimuth" sigma="0"/>
+                    <measurement value="1.343850346844784" type="zenith" sigma="0"/>
+                    <measurement value="1.735471777382478" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="9"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="101" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.009035189159780854" z="0.2003801764619356" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.1637701333573637" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="102" time="2018-07-06T17:25:20" type="polar">
+                <measurements>
+                    <measurement value="1.860830278989044" type="azimuth" sigma="0"/>
+                    <measurement value="1.516163407545305" type="zenith" sigma="0"/>
+                    <measurement value="1.766728609653947" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="19"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="103" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.05734490053459052" z="0.2031569214313291" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.1341109302380873" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="104" time="2018-07-06T17:25:31" type="polar">
+                <measurements>
+                    <measurement value="1.85339115538118" type="azimuth" sigma="0"/>
+                    <measurement value="1.520833449307036" type="zenith" sigma="0"/>
+                    <measurement value="1.712063200310519" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="19"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="105" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.06728868175747249" z="0.2031174985964319" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.07887967125096596" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="106" time="2018-07-06T17:25:41" type="polar">
+                <measurements>
+                    <measurement value="1.8243218867169" type="azimuth" sigma="0"/>
+                    <measurement value="1.519460739423143" type="zenith" sigma="0"/>
+                    <measurement value="1.68537862594939" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="19"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="107" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.04651140370969742" z="0.202157645743084" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.04412684756314816" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="108" time="2018-07-06T17:26:00" type="polar">
+                <measurements>
+                    <measurement value="1.801326566037293" type="azimuth" sigma="0"/>
+                    <measurement value="1.515590947675285" type="zenith" sigma="0"/>
+                    <measurement value="1.69493982633807" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="19"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="109" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.01904430842616312" z="0.1997258185002214" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.02910534884447902" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="110" time="2018-07-06T17:26:13" type="polar">
+                <measurements>
+                    <measurement value="1.783324318773788" type="azimuth" sigma="0"/>
+                    <measurement value="1.507973488916566" type="zenith" sigma="0"/>
+                    <measurement value="1.753223872441835" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="19"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="111" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.004563028731082275" z="0.2470677673147607" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.100580248738802" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="112" time="2018-07-06T17:26:35" type="polar">
+                <measurements>
+                    <measurement value="1.823042351858915" type="azimuth" sigma="0"/>
+                    <measurement value="1.539410711615014" type="zenith" sigma="0"/>
+                    <measurement value="1.757166996876863" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="21"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="113" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.004627634787179868" z="0.24703870610137" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.09659120129197796" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="114" time="2018-07-06T17:26:43" type="polar">
+                <measurements>
+                    <measurement value="1.819404491567557" type="azimuth" sigma="0"/>
+                    <measurement value="1.538343843046489" type="zenith" sigma="0"/>
+                    <measurement value="1.764640852107756" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="21"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="115" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.002997503565405735" z="0.2470609324787964" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.08950300910839282" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="116" time="2018-07-06T17:26:50" type="polar">
+                <measurements>
+                    <measurement value="1.815826334944425" type="azimuth" sigma="0"/>
+                    <measurement value="1.538261881988939" type="zenith" sigma="0"/>
+                    <measurement value="1.761016669694451" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="21"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="117" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.005149609164144975" z="0.2470570235576522" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.09226675109463645" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="118" time="2018-07-06T17:26:57" type="polar">
+                <measurements>
+                    <measurement value="1.818624862089796" type="azimuth" sigma="0"/>
+                    <measurement value="1.539164015129294" type="zenith" sigma="0"/>
+                    <measurement value="1.754136855958885" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="21"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="119" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.09144018319015346" z="0.05882683558269102" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.06697405498124714" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="120" time="2018-07-06T17:27:23" type="polar">
+                <measurements>
+                    <measurement value="1.831528985751132" type="azimuth" sigma="0"/>
+                    <measurement value="1.434782858043902" type="zenith" sigma="0"/>
+                    <measurement value="1.646423499438155" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="23"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="121" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.09155246870086864" z="0.06495802870450251" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.1354771473262045" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="122" time="2018-07-06T17:27:34" type="polar">
+                <measurements>
+                    <measurement value="1.870439435891135" type="azimuth" sigma="0"/>
+                    <measurement value="1.44244696640623" type="zenith" sigma="0"/>
+                    <measurement value="1.668398316388798" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="23"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="123" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.09153716175349391" z="0.007324943389993338" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.123162080732526" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="124" time="2018-07-06T17:27:41" type="polar">
+                <measurements>
+                    <measurement value="1.867626634817564" type="azimuth" sigma="0"/>
+                    <measurement value="1.407341305054288" type="zenith" sigma="0"/>
+                    <measurement value="1.662606391682854" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="23"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="125" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.09142584484398841" z="0.008570655675696088" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.05997447754878515" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="126" time="2018-07-06T17:27:49" type="polar">
+                <measurements>
+                    <measurement value="1.830940031371532" type="azimuth" sigma="0"/>
+                    <measurement value="1.404008576780675" type="zenith" sigma="0"/>
+                    <measurement value="1.642928054450751" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="23"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="127" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.09139494472864929" z="0.03899779249704068" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.09506257136987417" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="128" time="2018-07-06T17:27:55" type="polar">
+                <measurements>
+                    <measurement value="1.849186228064375" type="azimuth" sigma="0"/>
+                    <measurement value="1.424520856282979" type="zenith" sigma="0"/>
+                    <measurement value="1.654358203083901" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="23"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="133" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.05934215552052402" z="0.1037231932128948" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="-0.01929672637636953" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="134" time="2018-07-06T17:29:02" type="polar">
+                <measurements>
+                    <measurement value="1.772905678749675" type="azimuth" sigma="0"/>
+                    <measurement value="1.455502828144377" type="zenith" sigma="0"/>
+                    <measurement value="1.656278977819669" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="25"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="137" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.0002649249654047559" z="0.2461770156470828" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.09530541403093495" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="138" time="2018-07-06T17:32:25" type="polar">
+                <measurements>
+                    <measurement value="1.819546473674943" type="azimuth" sigma="0"/>
+                    <measurement value="1.538298182015478" type="zenith" sigma="0"/>
+                    <measurement value="1.759516020304875" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="15"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="141" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.01067914761267486" z="0.245390596767122" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.1182672677466008" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="142" time="2018-07-06T17:33:33" type="polar">
+                <measurements>
+                    <measurement value="1.833732608782892" type="azimuth" sigma="0"/>
+                    <measurement value="1.539717249215935" type="zenith" sigma="0"/>
+                    <measurement value="1.756558759111066" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="17"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="143" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.01695976686378775" z="0.2453973493149469" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.1128976756193766" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="144" time="2018-07-06T17:33:42" type="polar">
+                <measurements>
+                    <measurement value="1.826284601953152" type="azimuth" sigma="0"/>
+                    <measurement value="1.536818696770666" type="zenith" sigma="0"/>
+                    <measurement value="1.780912608883244" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="17"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="145" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="0.02280156309199866" z="0.2453730340508991" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.09249042760479076" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="146" time="2018-07-06T17:33:51" type="polar">
+                <measurements>
+                    <measurement value="1.814432621373105" type="azimuth" sigma="0"/>
+                    <measurement value="1.535509469151139" type="zenith" sigma="0"/>
+                    <measurement value="1.780359357281375" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="17"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="147" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.01914814633023809" z="0.2453389953389842" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.07760686692478913" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="148" time="2018-07-06T17:33:59" type="polar">
+                <measurements>
+                    <measurement value="1.812950789963019" type="azimuth" sigma="0"/>
+                    <measurement value="1.539063069214151" type="zenith" sigma="0"/>
+                    <measurement value="1.736365250587606" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="17"/>
+        </observation>
+        <observation isValid="1" isSolved="1" id="149" j="0" sigmaX="-0.4263240772023206" sigmaJ="0" y="-0.02515780542762358" z="0.2453507586664039" i="0" sigmaI="0" sigmaY="-1.66058624591975" x="0.09429805412968351" sigmaK="0" sigmaZ="-0.01292221393428467" k="0">
+            <station ref="5"/>
+            <reading id="150" time="2018-07-06T17:34:06" type="polar">
+                <measurements>
+                    <measurement value="1.823093077251318" type="azimuth" sigma="0"/>
+                    <measurement value="1.540279037146463" type="zenith" sigma="0"/>
+                    <measurement value="1.735620498835844" type="distance" sigma="0"/>
+                </measurements>
+            </reading>
+            <measuredTargetGeometry ref="17"/>
+        </observation>
+    </observations>
+    <configs>
+        <measurementConfigs>
+            <measurementConfig iterations="1" timeInterval="0" distanceDependent="0" name="FastPoint" distanceInterval="0" typeOfReading="2" timeDependent="0" isSaved="1" count="1000" measureTwoSides="0"/>
+            <measurementConfig iterations="1" timeInterval="0" distanceDependent="0" name="level" distanceInterval="0" typeOfReading="5" timeDependent="0" isSaved="1" count="500" measureTwoSides="0"/>
+            <measurementConfig iterations="1" timeInterval="0" distanceDependent="0" name="API-fast" distanceInterval="0" typeOfReading="1" timeDependent="0" isSaved="1" count="1000" measureTwoSides="0"/>
+            <measurementConfig iterations="1" timeInterval="0" distanceDependent="0" name="StdPoint" distanceInterval="0" typeOfReading="2" timeDependent="0" isSaved="1" count="2000" measureTwoSides="0"/>
+            <measurementConfig iterations="143" timeInterval="0" distanceDependent="1" name="StdScan" distanceInterval="20" typeOfReading="2" timeDependent="0" isSaved="1" count="10" measureTwoSides="0"/>
+            <measurementConfig iterations="1" timeInterval="0" distanceDependent="0" name="StdTwoSide" distanceInterval="0" typeOfReading="2" timeDependent="0" isSaved="1" count="2000" measureTwoSides="1"/>
+        </measurementConfigs>
+    </configs>
+</oiProjectData>
