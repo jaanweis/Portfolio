@@ -127,14 +127,14 @@ h1{
 	padding: 20 px;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+/* If the screen size is 601px wide or more, set the font-size of <div> to 20px */
 @media screen and (min-width: 801px) {
   .panels li div{
     font-size: 20px;
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* If the screen size is 600px wide or less, set the font-size of <div> to 50% */
 @media screen and (max-width: 800px) {
   .panels li div{
     font-size: 50%;
